@@ -1,0 +1,31 @@
+.index-partners{
+    margin-top:120px;
+    h2{
+        color:$font_color;
+        margin-bottom: 36px;
+    }
+}
+.index-partners-set{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li{
+        background: white;
+        border-radius: 2px;
+        width:280px;
+        height:190px;
+        box-shadow: $shadow_light;
+        margin-right:15px;
+        box-sizing: border-box;
+        padding: 19px 23px 13px 23px;
+    text-align: center;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    p{
+        margin-top:12px;
+    }
+    }
+    
+}

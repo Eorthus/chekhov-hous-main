@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: $background_color;
+}
+a{
+    text-decoration: none;
+    color:$font_color;
+}
+address{
+    font-style: normal;
+}
+h1{
+    font-family: $bold;
+    font-size: 60px;
+    line-height: 70px;  
+}
+h2{
+    font-family: $bold;
+    font-size: 45px;
+    line-height: 55px;
+}
+h3{
+    font-family: $regular;
+    font-size: 34px;
+    line-height: 42px;
+}
+.button-main{
+    background: $gradient_color;
+box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+border-radius: 200px;
+color: white;
+font-size:18px;
+border:none;
+&:hover{
+    background: $active_gradient_color;
+}
+}
+.button-dark{
+box-shadow: 0px 4px 10px #006830;
+}
+.container{
+    padding-left:$padding;
+    padding-right:$padding;
+}
+.f-bold-60 {
+    font-family: $bold;
+    font-size: 60px;
+    line-height: 70px;
+}
+.f-bold-45 {
+    font-family: $bold;
+    font-size: 45px;
+    line-height: 55px;
+}
+.f-regular-34 {
+    font-family: $regular;
+    font-size: 34px;
+    line-height: 42px;
+}
+.f-regular-20 {
+    font-family: $regular;
+    font-size: 20px;
+    line-height: 32px;
+}
+.f-regular-16 {
+    font-family: $regular;
+    font-size: 16px;
+}

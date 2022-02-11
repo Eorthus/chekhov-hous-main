@@ -6,34 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chekhov House</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
 </head>
 
 <body>
-    <header>
-        <div class="main-contacts">
-            <div class="main-contacts-logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="main-contacts-address">
-                <address> <img src="images/geo.png" alt="address">
+    <header class="f-regular-16">
+        <div class="header-contacts container">
+            <a href="#" class="header-contacts-logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <div class="header-contacts-address">
+                <address> <img src="img/geo.png" alt="address">
                     МО, г. Чехов, симферопольское шоссе, д. 2
                 </address>
-                <a href="mailto:chehovhouse@yandex.ru"><img src="images/mail.png" alt="e-mail">chehovhouse@yandex.ru</a>
+                <a href="mailto:chehovhouse@yandex.ru"><img src="img/mail.png" alt="e-mail">chehovhouse@yandex.ru</a>
             </div>
-            <div class="main-contacts-phone">
-                <img src="images/whatsapp.png" alt="address">
+            <div class="header-contacts-phone">
+                <img src="img/whatsapp.png" alt="address">
                 <a href="tel:+79266211152">+7(926)&nbsp621&nbsp11&nbsp52</a>
 
                 <a href="tel:+74950159015"><span>&#8226;</span>+7(495)&nbsp015&nbsp90&nbsp15</a>
             </div>
-            <div class="main-contacts-feedback">
-                <button class="main-contacts-feedback-button">Обратная связь</button>
+            <div class="header-contacts-feedback">
+                <button class="header-contacts-feedback-button">Обратная связь</button>
             </div>
         </div>
 
-        <nav class="main-menu">
-            <ul class="main-menu-nav">
+        <nav class="header-menu container">
+            <ul class="header-menu-nav">
                 <li><a href="#">Строительство</a></li>
                 <li><a href="#">Ремонт</a></li>
                 <li><a href="#">Инженерные системы</a></li>
@@ -42,60 +45,117 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
+        <div class="header-slider">
 
-        <!--<div class="main-banner">
-            <div class="main-banner-labels">
-                <button class="first" onclick="Visible('first')"></button>
-                <button class="second" onclick="Visible('second')"></button>
-            </div>
-            <div id="first" class="main-banner-first">
-                <div class="main-banner-slider">
-                    <img src="images/bannerlayout.jpg" alt="bannerlayout">
+            <div>
+                <div class="header-slider-left">
+                    <div class="header-slider-left-nav">
+                        <h2>При строительстве дома септик в подарок</h2>
+                        <p class="f-regular-20">Строительство домов, квартир, офисов, бань, дач, складских помещений и
+                            т.д.
+                        </p>
+                        <button class="button-main button-dark">Получить скидку</button>
+                    </div>
                 </div>
-                <div class="main-banner-img">
-                    <img src="images/banner1.jpg" alt="banner1">
-                </div>
-            </div>
-            <div id="second" class="main-banner-second hidden">
-                <div class="main-banner-slider">
-                    <img src="images/bannerlayout.jpg" alt="bannerlayout">
-                </div>
-                <div class="main-banner-img">
-                    <img src="images/banner2.jpg" alt="banner2">
+                <div class="header-slider-right">
+                    <div class="header-slider-right-bonus">
+                        <a href="#"><img class="header-slider-right-bonus-gift" src="img/gift.svg" alt="gift"></a>
+                        <img class="header-slider-right-bonus-img" src="img/bonus_1.png" alt="gift">
+                    </div>
+                    <img src="img/banner1.jpg" alt="banner1">
                 </div>
             </div>
-        </div>-->
+            <div>
+                <div class="header-slider-left">
+                    <div class="header-slider-left-nav">
+                        <h2>Ремонт квартиры со скидкой от 5% до 1 мая 2022 г</h2>
+                        <p class="f-regular-20">Строительство домов, квартир, офисов, бань, дач, складских помещений и
+                            т.д.
+                        </p>
+                        <button class="button-main button-dark">Получить скидку</button>
+                    </div>
+                </div>
+                <div class="header-slider-right">
+                    <div class="header-slider-right-sale">
+                        <a href="#"><img class="header-slider-right-sale-img" src="img/sale.svg" alt="sale"></a>
+                    </div>
+                    <img src="img/banner2.jpg" alt="banner2">
+                </div>
+            </div>
+        </div>
+        </div>
+        </main>
     </header>
-    <main></main>
-    <footer>
-        <div class="main-footer-info">
-            <div class="main-footer-info-logo">
-                <img src="images/logo.png" alt="logo">
+    <main>
+        <div class="index-partners container">
+            <h2>Наши партнеры</h2>
+            <ul class="index-partners-set f-regular-20">
+                <li><a href="#"><img src="img/partner1.png" alt="partner1">
+                        <p>Почта-банк</p>
+                    </a>
+                </li>
+                <li><a href="#"><img src="img/partner2.png" alt="partner2">
+                        <p>Почта-банк</p>
+                    </a>
+                </li>
+                <li><a href="#"><img src="img/partner3.png" alt="partner3">
+                        <p>Почта России</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="f-regular-16">
+        <div class="footer-feedback">
+            <div class="container footer-feedback-container">
+                <div class="footer-feedback-message">
+                    <h3>Рассчитайте стоимость!</h3>
+                    <p>Закажите обратный звонок, и наш менеджер перезвонит вам через 15 минут</p>
+                </div>
+                <div class="footer-feedback-window">
+
+                    <p>Имя</p>
+                    <input style="margin-bottom: 24px;" type="text" placeholder="Введите имя">
+                    <p>Телефон</p>
+                    <input type="text" placeholder="Ваш телефон">
+                    <button class="button-main">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info container">
+            <a href="#" class="footer-info-logo">
+                <img src="img/logo.png" alt="logo">
                 <p>Строительство, отделка и ремонт
                     домов, дач и квартир</p>
-            </div>
-            <div class="main-footer-info-media">
-                <p>Статьи и Полезная информация</p>
-                <ul class="main-footer-info-media-messangers">
-                    <li><a href="#"><img src="images/telegram-logo.png" alt="telegram"></a></li>
-                    <li><a href="#"><img src="images/whatsapp-logo.png" alt="telegram"></a></li>
-                    <li><a href="#"><img src="images/instagram-logo.png" alt="telegram"></a></li>
+            </a>
+            <div class="footer-info-media">
+                <p class="f-regular-20">Статьи и Полезная информация</p>
+                <ul class="footer-info-media-messangers">
+                    <li><a href="#"><img src="img/telegram-logo.svg" alt="telegram"></a></li>
+                    <li><a href="#"><img src="img/whatsapp-logo.svg" alt="telegram"></a></li>
+                    <li><a href="#"><img src="img/instagram-logo.svg" alt="telegram"></a></li>
                 </ul>
                 <span>ИНН: 504816785812 ОГРН: 319508100221280</span>
             </div>
-            <div class="main-footer-info-contacts">
+            <div class="footer-info-contacts">
                 <p>Бесплатный звонок</p>
-                <a href="tel:88903332211">8(890)333 22 11</a>
+                <a class="f-regular-20" href="tel:88903332211">8(890)333 22 11</a>
                 <p>Ежедневно с 10.00 до 19.00</p>
-                <address>МО, г. Чехов, симферопольское шоссе, д. 2, офис 29</address>
+                <address class="f-regular-20">МО, г. Чехов, симферопольское шоссе, д. 2, офис 29</address>
             </div>
         </div>
-        <div class="main-footer-rights">
+        <div class="footer-rights container">
             <p>Copyright © 2021, Полимерлист. Все права защищены.</p>
             <p>Разработка и продвижение SeoBService</p>
         </div>
     </footer>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
 
 </html>
