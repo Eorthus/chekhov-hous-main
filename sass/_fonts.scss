@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Intro_regular';
-    src: url("../fonts/Intro\ Regular\ Alt.otf") format("truetype");
+    font-family: 'intro_regular';
+    src: url("../fonts/intro-regular.ttf") format("truetype"), url("../fonts/intro-regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Intro_bold';
-    src: url("../fonts/Intro\ Bold\ Alt.otf") format("truetype");
+    font-family: 'intro_bold';
+    src: url("../fonts/intro-bold.ttf") format("truetype"), url("../fonts/intro-bold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }

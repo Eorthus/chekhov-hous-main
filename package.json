@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.25",
+    "disableautofill": "^2.0.0",
+    "jquery": "^3.6.0"
+  }
+}

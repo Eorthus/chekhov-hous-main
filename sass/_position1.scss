@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    $background_color:#FAFAFA;
+    color:$font_color;
+}
+p{
+    margin-bottom:0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+a{
+    text-decoration: none;
+    color:$font_color !important;
+    &:hover{
+        text-decoration: none;
+        color:$font_color;
+    }
+}
+ul{
+    padding-left:0px;
+    margin-bottom:0px;
+}
+address{
+    font-style: normal;
+    margin-bottom: 4px;
+}
+h1{
+    font-family: $bold;
+    font-size: 60px;
+    line-height: 70px;  
+}
+.chekhov-h2{
+    font-family: $bold;
+    font-size: 45px;
+    display: block;
+}
+.chekhov-h3{
+    font-family: $regular;
+    font-size: 34px;
+    display: block;
+}
+.chekhov-h4{
+    font-family: $regular;
+    font-size: 30px;
+    display: block;
+}
+
+.button-main{
+    background: $gradient_color;
+box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+border-radius: 200px;
+color: white;
+font-size:18px;
+border:none;
+&:hover{
+    background: $active_gradient_color;
+}
+}
+.button-dark{
+box-shadow: 0px 4px 10px #006830;
+}
+.container{
+    padding-left:$padding;
+    padding-right:$padding;
+    max-width:1920px;
+    width:100%;
+}
+.f-bold-60 {
+    font-family: $bold;
+    font-size: 60px;
+    
+}
+.f-bold-45 {
+    font-family: $bold;
+    font-size: 45px;
+}
+.f-regular-34 {
+    font-family: $regular;
+    font-size: 34px;
+}
+.f-regular-20 {
+    font-family: $regular;
+    font-size: 20px;
+
+}
+.f-regular-16 {
+    font-family: $regular;
+    font-size: 16px;
+}
+.slick-slider {
+    margin-bottom: 0 !important;
+}
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+
+@media (max-width:1320px){
+
+}
+@media (max-width:1140px){
+    
+}
+@media (max-width:960px){
+    
+}
+@media (max-width:720px){
+    .container{
+        padding-left:$mobile_padding;
+        padding-right:$mobile_padding;
+    }
+    .f-regular-20{
+        font-size:16px;
+    
+    }
+    .chekhov-h2{
+        font-size:34px;
+    }     
+}
+@media (max-width:540px){
+
+
+}

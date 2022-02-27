@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт и отделка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="js/components/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/components/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <header class="f-regular-16">
+        <div class="header-contacts row container">
+            <div class="header-contacts-logo col-6 col-sm-6 col-lg-3">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-contacts-address col-12 col-sm-12 col-lg-3">
+                <address> <a class="header-contacts-address-link" href="https://yandex.ru/maps/-/CCU5ZGqc1D"> <img
+                            src="img/geos.svg" alt="address">
+                        <p class="header-address"> МО, г. Чехов, симферопольское шоссе, д. 2</p>
+                    </a>
+                </address>
+                <a class="header-contacts-address-email" href="mailto:chehovhouse@yandex.ru"><img src="img/email.svg"
+                        alt="e-mail">chehovhouse@yandex.ru</a>
+            </div>
+            <div class="header-contacts-phone col-10 col-sm-10 col-lg-3">
+                <img src="img/tel.svg" alt="address">
+                <a class="header-contacts-phone-number" href="tel:+79266211152">+7(926)&nbsp621&nbsp11&nbsp52</a>
+
+                <a class="header-contacts-phone-number" href="tel:+74950159015">
+                    +7(495)&nbsp015&nbsp90&nbsp15
+                </a>
+            </div>
+            <div class="header-contacts-feedback col-6 col-sm-6 col-lg-3">
+                <button type="button" class="btn btn-primary header-contacts-feedback-button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Обратная связь</button>
+            </div>
+
+            <nav class="navbar navbar-light navbar-expand-lg  col-2 col-lg-12">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-grow-1 pe-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Строительство
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Дома</a></li>
+                                        <li><a class="dropdown-item" href="#">Бани</a></li>
+                                        <li><a class="dropdown-item" href="#">Беседки</a></li>
+                                        <li><a class="dropdown-item" href="#">Лестницы</a></li>
+                                        <li><a class="dropdown-item" href="#">Фундамент</a></li>
+                                        <li><a class="dropdown-item" href="#">Достройка и реконструкция</a></li>
+                                        <li><a class="dropdown-item" href="#">Кровли</a></li>
+                                        <li><a class="dropdown-item" href="#">Складские помещения</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ремонт
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Ремонт квартир</a></li>
+                                        <li><a class="dropdown-item" href="#">Ремонт офисов</a></li>
+                                        <li><a class="dropdown-item" href="#">Ремонт дорог</a></li>
+                                        <li><a class="dropdown-item" href="#">Отделка квартир</a></li>
+                                        <li><a class="dropdown-item" href="#">Отделка домов</a></li>
+                                        <li><a class="dropdown-item" href="#">Отделка фасадов</a></li>
+                                        <li><a class="dropdown-item" href="#">Сайдинг</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Инженерные системы
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Отопление</a></li>
+                                        <li><a class="dropdown-item" href="#">Водоснабжение</a></li>
+                                        <li><a class="dropdown-item" href="#">Канализация</a></li>
+                                        <li><a class="dropdown-item" href="#">Сантехника</a></li>
+                                        <li><a class="dropdown-item" href="#">Электрика</a></li>
+                                        <li><a class="dropdown-item" href="#">Вентиляция</a></li>
+                                        <li><a class="dropdown-item" href="#">Дренажные системы</a></li>
+                                        <li><a class="dropdown-item" href="#">Водосточные системы</a></li>
+                                        <li><a class="dropdown-item" href="#">Слаботочные системы</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Другое
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Ландшафтный дизайн</a></li>
+                                        <li><a class="dropdown-item" href="#">Сносы зданий</a></li>
+                                        <li><a class="dropdown-item" href="#">Вывоз грунта</a></li>
+                                        <li><a class="dropdown-item" href="#">Доставка песка и щебня</a></li>
+                                        <li><a class="dropdown-item" href="#">Подключение интернета</a></li>
+                                        <li><a class="dropdown-item" href="#">Подключение цифрового телевидения</a></li>
+                                        <li><a class="dropdown-item" href="#">Подключение спутникового телевидения</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Установка домофонов</a></li>
+                                        <li><a class="dropdown-item" href="#">Установка систем видеонаблюдения</a></li>
+                                        <li><a class="dropdown-item" href="#">Установка усиления сотовой связи</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="projects.html">Проекты
+                                        домов</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacts.html">Контакты</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        </div>
+
+        <div class="header-slider" id="header-slider">
+
+            <div>
+                <div class="header-slider-left">
+                    <div class="header-slider-left-nav">
+                        <span class="header-slider-left-nav-h2 chekhov-h2">При строительстве дома септик в
+                            подарок</span>
+                        <p class="header-slider-left-nav-p f-regular-20">Строительство домов, квартир, офисов, бань,
+                            дач, складских помещений и
+                            т.д.
+                        </p>
+                        <button class="header-slider-left-nav-button button-main button-dark ">Получить скидку</button>
+                    </div>
+                </div>
+                <div class="header-slider-right">
+                    <div class="header-slider-right-bonus">
+                        <a href="#"><img class="header-slider-right-bonus-gift" src="img/gift.svg" alt="gift"></a>
+                        <img class="header-slider-right-bonus-img" src="img/bonus1.png" alt="gift">
+                    </div>
+                    <img src="img/banner1.jpg" alt="banner1">
+                </div>
+            </div>
+            <div>
+                <div class="header-slider-left">
+                    <div class="header-slider-left-nav">
+                        <span class="header-slider-left-nav-h2 chekhov-h2">Ремонт квартиры со скидкой от 5% до 1 мая
+                            2022 г</span>
+                        <p class="header-slider-left-nav-p f-regular-20">Строительство домов, квартир, офисов, бань,
+                            дач, складских помещений и
+                            т.д.
+                        </p>
+                        <button class="header-slider-left-nav-button button-main button-dark ">Получить скидку</button>
+                    </div>
+                </div>
+                <div class="header-slider-right">
+                    <div class="header-slider-right-sale">
+                        <a href="#"><img class="header-slider-right-sale-img" src="img/sale.svg" alt="sale"></a>
+                    </div>
+                    <img src="img/banner2.jpg" alt="banner2">
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="repair container">
+            <span class="chekhov-h2 repair-h2">Строительство домов</span>
+            <div class="f-regular-20 repair-text">
+                <p class="repair-text-p">Собственный дом – это реализация даже самых смелых желаний. Вы можете создать
+                    именно дом своей мечты, который будет иметь именно ту форму и фактуру, выбранную вами. Стоит
+                    учитывать, что строительство – долгий и кропотливый процесс, который лучше всего доверить
+                    профессионалам.</p>
+                <p class="repair-text-p">Вне зависимости от того, будет ли это небольшая дача «эконом класса» или
+                    элитный особняк, наиболее приемлемым вариантом будет заказать полный прайс о строительстве домов в
+                    Чехове. Говоря подробнее о том, что такое строительство домов в Чеховском районе стоит иметь в виду,
+                    что такая услуга комплексная и предполагает начало возведение «с нуля».</p>
+                <span class="repair-text-h3 chekhov-h3">Нужно строительство дома в Чехове?</span>
+                <p class="repair-text-p repair-p-margin">Полное строительство от компании "ЧеховХаус" – это минимальное
+                    участие
+                    заказчика во время работ. Подготовка также включает необходимую документацию для проведения
+                    монтажных, отделочных и любых других услуг. По окончанию работ вам также будут предложены услуги по
+                    благоустройству окружающей территории. Компания "ЧеховХаус" обладает большим опытом строительства и
+                    всегда готова прислушаться к мнению своих клиентов. </p>
+                <span class="repair-text-h3 chekhov-h3 repair-hidden">Что стоит еще знать
+                    о строительстве?</span>
+                <p class="repair-text-p repair-p-margin">Стоит отметить, что стоимость строительства в Чеховском районе
+                    обойдется вам
+                    намного дешевле, чем вы могли предположить. Проводится индивидуальный расчет материалов и
+                    эксплуатации необходимой техники для каждого отдельного случая. Компания проводи строительные работы
+                    четко по составленной заранее смете. Вы можете рассчитывать на результат, который точно вас устроит.
+                    Оформите заявку или позвоните нам, чтобы обсудить все детали строительства вашего дома. </p>
+                <p class="repair-text-p">Обращайтесь к нам. Вам не придется самостоятельно подбирать материалы,
+                    единственное, что требуется – согласовать проект и определиться с конечным результатом. Стандартно,
+                    создается трехмерный проект дома, проводится подготовка к началу работ и прокладка инженерных сетей.
+                </p>
+            </div>
+
+        </section>
+        <section class="index-prices container f-regular-20 repair-margin-prices">
+            <span class="index-prices-h2 chekhov-h2">Цены на строительство домов</span>
+            <ul class="index-prices-gallery f-regular-20">
+                <li>
+                    <img src="img/price1.jpg" alt="price1">
+                    <div class="index-prices-gallery-price">
+                        <p class="index-prices-gallery-price-p">Каркасный дом</p>
+                        <p class="index-prices-gallery-price-p">от
+                            <span class="index-prices-gallery-price-p-span">
+                                15000
+                            </span>
+                            /м<sup>2</sup>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/price2.jpg" alt="price2">
+                    <div class="index-prices-gallery-price">
+                        <p class="index-prices-gallery-price-p">Брусовые дома</p>
+                        <p class="index-prices-gallery-price-p">от
+                            <span class="index-prices-gallery-price-p-span">
+                                15000
+                            </span>
+                            /м<sup>2</sup>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/price3.jpg" alt="price3">
+                    <div class="index-prices-gallery-price">
+                        <p class="index-prices-gallery-price-p">Срубовые дома</p>
+                        <p class="index-prices-gallery-price-p">от
+                            <span class="index-prices-gallery-price-p-span">
+                                27000
+                            </span>
+                            /м<sup>2</sup>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/price4.jpg" alt="price4">
+                    <div class="index-prices-gallery-price">
+                        <p class="index-prices-gallery-price-p">Дом кирпичный</p>
+                        <p class="index-prices-gallery-price-p">от
+                            <span class="index-prices-gallery-price-p-span">
+                                27000
+                            </span>
+                            /м<sup>2</sup>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/price5.jpg" alt="price5">
+                    <div class="index-prices-gallery-price">
+                        <p class="index-prices-gallery-price-p">Газопеноблочные дома</p>
+                        <p class="index-prices-gallery-price-p">от
+                            <span class="index-prices-gallery-price-p-span">
+                                12000
+                            </span>
+                            /м<sup>2</sup>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/price6.jpg" alt="price6">
+                    <div class="index-prices-gallery-price">
+                        <p class="index-prices-gallery-price-p">Комбинированный дом</p>
+                        <p class="index-prices-gallery-price-p">от
+                            <span class="index-prices-gallery-price-p-span">
+                                16000
+                            </span>
+                            /м<sup>2</sup>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <button class="button-main index-prices-button">Подробнее</button>
+        </section>
+        <section class="index-projects build-projects-margin">
+            <h2 class="index-projects-h2 chekhov-h2">Наши проекты</h2>
+            <div class="index-projects-slider f-regular-34">
+
+                <div>
+
+                    <div class="index-projects-slider-img">
+
+                        <img src="img/build1.jpg" alt="gallery1">
+                        <a class="index-projects-slider-a" href="card.html"></a>
+                    </div>
+                    <span class="chekhov-h3 index-projects-slider-h3">Коттедж за городом</span>
+                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
+                        сделан описание проекта пару
+                        слов, когда и как он
+                        сделан </p>
+                    <span class="chekhov-h3 index-projects-slider-span">от 82 800</span>
+                </div>
+                <div>
+                    <div class="index-projects-slider-img">
+
+                        <img src="img/build2.jpg" alt="gallery2">
+                        <a class="index-projects-slider-a" href="card.html"></a>
+                    </div> <span class="chekhov-h3 index-projects-slider-h3">Дачный дом в Подмосковье</span>
+                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
+                        сделан описание проекта пару
+                        слов, когда и как он
+                        сделан </p>
+                    <span class="chekhov-h3 index-projects-slider-span">от 94 800</span>
+                </div>
+                <div>
+                    <div class="index-projects-slider-img">
+
+                        <img src="img/build3.jpg" alt="gallery3">
+                        <a class="index-projects-slider-a" href="card.html"></a>
+                    </div> <span class="chekhov-h3 index-projects-slider-h3">Дачный дом в Подмосковье</span>
+                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
+                        сделан описание проекта пару
+                        слов, когда и как он
+                        сделан </p>
+                    <span class="chekhov-h3 index-projects-slider-span">от 94 800</span>
+
+                </div>
+                <div>
+                    <div class="index-projects-slider-img">
+
+                        <img src="img/build1.jpg" alt="gallery1">
+                        <a class="index-projects-slider-a" href="card.html"></a>
+                    </div>
+                    <span class="chekhov-h3 index-projects-slider-h3">Коттедж за городом</span>
+                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
+                        сделан описание проекта пару
+                        слов, когда и как он
+                        сделан </p>
+                    <span class="chekhov-h3 index-projects-slider-span">от 82 800</span>
+                </div>
+
+            </div>
+            <button class="button-main index-projects-button">Все проекты</button>
+        </section>
+        <section class="index-gallery build-gallery-margin">
+            <span class="index-gallery-h2 chekhov-h2">Фотогалерея по строительству домов</span>
+            <div class="index-gallery-slider">
+
+                <div>
+                    <a href="img/build1.jpg" data-fancybox="gallery-build">
+                        <img class="index-gallery-item" src="img/build1.jpg" alt="gallery1">
+                    </a>
+                </div>
+                <div>
+                    <a href="img/build2.jpg" data-fancybox="gallery-build">
+                        <img class="index-gallery-item" src="img/build2.jpg" alt="gallery2">
+                    </a>
+                </div>
+                <div>
+                    <a href="img/build3.jpg" data-fancybox="gallery-build"></a>
+                    <img class="index-gallery-item" src="img/build3.jpg" alt="gallery3">
+                    </a>
+                </div>
+                <div>
+                    <a href="img/build1.jpg" data-fancybox="gallery-build">
+                        <img class="index-gallery-item" src="img/build1.jpg" alt="gallery1">
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="f-regular-16">
+        <div class="footer-feedback">
+            <div class="container footer-feedback-container">
+                <div class="footer-feedback-message">
+                    <span class="chekhov-h3 footer-feedback-message-h3">Рассчитайте стоимость!</span>
+                    <p>Закажите обратный звонок, и наш менеджер перезвонит вам через 15 минут</p>
+                </div>
+                <div class="footer-feedback-window">
+
+                    <!--  <p class="footer-feedback-window-p f-regular-16">Имя</p>-->
+                    <input class="footer-feedback-window-input" autocomplete="off" type="text" placeholder="Введите имя"
+                        style="margin-bottom: 24px;">
+                    <!--   <p class="footer-feedback-window-p f-regular-16">Телефон</p>-->
+                    <input class="footer-feedback-window-input phone_mask" autocomplete="off" type="tel"
+                        placeholder="Ваш телефон">
+                    <button type="button" class="btn btn-primary button-main footer-feedback-window-button"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info container">
+            <a href="#" class="footer-info-logo col-md">
+                <img src="img/logo.png" alt="logo">
+                <p class="footer-info-logo-p">Строительство, отделка и ремонт
+                    домов, дач и квартир</p>
+            </a>
+            <div class="footer-info-media col-md">
+                <p class="footer-info-media-p f-regular-20">Статьи и Полезная информация</p>
+                <ul class="footer-info-media-messangers">
+                    <li><a href="#"><img src="img/telegram-logo.svg" alt="telegram"></a></li>
+                    <li><a href="#"><img src="img/whatsapp-logo.svg" alt="whatsapp"></a></li>
+                    <li><a href="#"><img src="img/instagram-logo.svg" alt="whatsapp"></a></li>
+                </ul>
+                <div class="footer-info-media-messangers-inn">
+                    <p class="inn">ИНН: 504816785812 </p>
+                    <p class="ogrn">ОГРН: 319508100221280</p>
+                </div>
+            </div>
+            <div class="footer-info-contacts col-md">
+                <p class="footer-info-contacts-p">Бесплатный звонок</p>
+                <a class="f-regular-20" href="tel:88903332211">8(890)333 22 11</a>
+                <p class="footer-info-contacts-p">Ежедневно с 10.00 до 19.00</p>
+                <address class="f-regular-20">
+                    <a href="https://yandex.ru/maps/-/CCU5ZGuZKA"> МО, г. Чехов, симферопольское шоссе, д. 2, офис 29
+                    </a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-rights container">
+            <p class="footer-rights-p">Copyright © 2021, Полимерлист. Все права защищены.</p>
+            <p class="footer-rights-p">Разработка и продвижение SeoBService</p>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title chekhov-h2 modal-feedback-head" id="exampleModalLabel">Закажите обратный
+                            звонок</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body modal-feedback-body">
+                        <!--  <p class="footer-feedback-window-p f-regular-16">Имя</p>-->
+                        <input class="modal-feedback-input" type="text" autocomplete="off" placeholder="Введите имя"
+                            style="margin-bottom: 24px;">
+                        <!--  <p class="footer-feedback-window-p f-regular-16">Телефон</p>-->
+                        <input class="modal-feedback-input phone_mask" autocomplete="off" type="tel"
+                            placeholder="Ваш телефон">
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-bs-dismiss="modal"
+                            class="btn btn-primary button-main modal-feedback-button">Заказать звонок</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/disableautofill/src/jquery.disableAutoFill.min.js"></script>
+    <script type="text/javascript" src="js/components/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/components/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/components/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</body>
+
+</html>
