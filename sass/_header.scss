@@ -2,7 +2,7 @@ header{
     .row{
         --bs-gutter-x: none !important;
     }
-    background-color: $block_color;
+    background-color: $dropdown_color;
     .nav-link{
         color:$font_color;
         &:hover, &:active{
@@ -588,22 +588,16 @@ margin-top:17px;
     .header-slider{
         order:3;
     }
+    .dropdown-menu{
+        align-items: center;
+            text-align: left;
+            width: 100%;
+            border-top:2px solid $elements_color;
+            border-bottom: 2px solid $elements_color;
 }
-.dropdown-menu{
-border:none !important;
-align-items: center;
-    text-align: center;
-    width: 100%;
-    & li:last-child{
-        border-bottom:2px solid $elements_color
-    }
+
 }
-.dropdown-item-ul{
-    display: none;
-        }
-.dropdown-item-menu:active .dropdown-item-ul{
-  display: block;
-}
+
 
 }
 
@@ -717,4 +711,7 @@ display: none !important;
     margin-left:-5%;
 }
 
+}
+.dropdown-toggle .show{
+    position: fixed;
 }
