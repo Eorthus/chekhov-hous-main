@@ -1,0 +1,132 @@
+.buildprices-table{
+    border-radius: 40px 40px 40px 4px;
+    overflow: hidden;
+margin-top:40px;
+
+box-shadow: $shadow_dark;
+}
+.buildtype-prices{
+    background: $block_color;
+    color: $font_color;
+    padding-top:90px;
+    margin-bottom: 130px;
+    padding-bottom:70px;
+.buildtype-prices-table{
+
+    .buildtype-prices-table-head{
+        background-color: #08A652;
+        color: white;
+        height: 70px;
+        padding-left: 42px;
+
+       
+        th{
+            padding-left:45px;
+            padding-right:92px;
+            font-weight: normal;
+        }
+    &:last-child{
+        text-align: center;
+    }
+      }
+      .buildprices-table-row{
+          &:nth-child(2n){
+              background: white;
+          }
+        background: $block_color;
+        td{
+            padding-left:45px;
+            padding-right:92px;
+            height: 48px;
+            
+        }
+      .buildprices-table-row-price{
+          text-align: end;
+          font-size: $minifont;
+          font-weight: bold;
+          &:after{
+           
+                content:'\0020BD';
+                margin-left:4px;
+               
+          }
+      }
+    }
+      
+}
+}
+.buildprices-table-button{
+    background-color: $elements_color;
+    background-color: white;
+    height: 70px;
+    text-align: center;
+    .buildprices-table-button-a{
+        color:$elements_color;
+            cursor: pointer;
+            img{
+                margin-left:8px;
+            }
+    }
+    .arrow-reverse{
+        transform: rotate(180deg);
+    }
+}
+
+.demotable {
+    border-collapse: collapse;
+    }
+    #all1{
+        display: contents;
+    }
+    /* здесь вся магия, если браузер не поддерживает структурные псевдоклассы, то список будет раскрыт, т.е. доступ к данным сохранится */
+    [id^="all"] {
+    position: fixed; /* чтобы страница "не подпрыгивала" к id */
+    }
+    [id^="all"]:target + table a[href^="#all"],
+    [id^="all"]:not(:target) + table tbody tr:nth-of-type(n+16), /* 4 — это порядковый номер tr, после которого строки будут изначально удалены (включительно) */
+    [id^="all"]:not(:target) + table a[href="#close"] {
+    display: none;
+    }
+
+    @media (max-width:1194px) {
+        .buildtype-prices-table-head th{
+            padding-left: 16px !important;
+            padding-right: 10px !important;
+        }
+        .buildprices-table-row td{
+            padding-left: 16px !important;
+            padding-right: 10px !important;
+        }
+    .buildprices-table-row-price{
+        text-align: left;
+        padding-left: 0;
+        width:154px
+    }
+    }
+    @media (max-width:642px){
+
+        .buildtype-prices{
+            padding-top:40px;
+            margin-bottom: 64px;
+            padding-bottom:54px;
+        }
+        .buildprices-table-row-price{
+           width:147px;
+           font-size:20px !important;
+        }
+        .buildprices-table-button{
+            background-color: transparent;
+            height: 70px;
+            text-align: left;
+        }
+        .buildprices-table{
+            box-shadow: none;
+            border-radius: 0px 40px 40px 4px;
+        margin-top:40px;
+        }
+        [id^="all"]:target + table a[href^="#all"],
+        [id^="all"]:not(:target) + table tbody tr:nth-of-type(n+11), /* 4 — это порядковый номер tr, после которого строки будут изначально удалены (включительно) */
+        [id^="all"]:not(:target) + table a[href="#close"] {
+        display: none;
+        }
+    }

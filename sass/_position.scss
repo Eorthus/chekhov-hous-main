@@ -20,7 +20,7 @@ address{
     visibility: hidden !important;
 }
 .slick-dots{
-    width:100% !important;
+    width:50% !important;
 }
 .chekhov-h1{
     font-family: $bold;
@@ -127,6 +127,12 @@ a:hover {
     text-decoration: none;
     color:$font-color;
 }
+.large-address{
+    display: block;
+    }
+    .small-address{
+    display: none;
+    }
 
 @media (max-width:1320px){
 
@@ -134,10 +140,17 @@ a:hover {
 @media (max-width:1140px){
     
 }
-@media (max-width:960px){
+@media (max-width:991px){
+
     
 }
 @media (max-width:768px){
+    .large-address{
+        display: none;
+        }
+        .small-address{
+        display: block;
+        }
     .container{
         padding-left:$mobile_padding;
         padding-right:$mobile_padding;

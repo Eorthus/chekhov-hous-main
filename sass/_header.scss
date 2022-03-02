@@ -52,12 +52,36 @@ header{
         &:last-child{
           margin-right: 0;
         }
+ 
       }
       .menu__link{
         text-decoration: none;
        // font-size: 18px;
         color: $font_color;
       }
+      .navbar::before{
+        content: "";
+    position: absolute;
+    height: 2px;
+    width:100%;
+    
+    background-color: white;
+    top: 0;
+    }
+    .dropdown-item-menu{
+        padding: 0.25rem 1rem !important;
+       margin-bottom: 0px !important;
+       
+    }
+    .dropdown-item-ul{
+        padding-left:1rem !important;
+        list-style-type: none;
+    }
+    .dropdown-item-level{
+color:$lowtext_color;
+font-size: 14px;
+padding-top: 0px;
+    }
       @media screen and (max-width: 991px){
         body.lock{
           overflow-y: hidden;
@@ -173,6 +197,7 @@ header{
     //
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
 }
 .header-contacts-logo{
     margin: auto;
@@ -184,6 +209,7 @@ header{
 order:4;
     margin:auto;
     text-align: right;
+
     .header-contacts-feedback-button{
         background: $elements_color;
         width: 208px;
@@ -224,6 +250,7 @@ order:4;
     margin: auto;
     text-align: start;
     order:2;
+
     .header-contacts-address-email{
         display: flex;
         flex-wrap: nowrap;
@@ -247,6 +274,7 @@ order:4;
     margin-top:auto !important;
     margin-bottom:auto !important;
 }
+
 .header-contacts-address-link{
 margin:5px;
 }
@@ -439,6 +467,10 @@ right:-30%;
     &:hover{
         transform: scale(1.2);
     }
+
+
+
+
 }
 @media (max-width:1320px){
 
@@ -532,6 +564,7 @@ margin-top:17px;
 .header-contacts-feedback{
     order: 4;
     min-height: 36px;
+    padding-top:2px;
     .header-contacts-feedback-button{
     width:152px;
     height:32px;
@@ -565,13 +598,16 @@ align-items: center;
         border-bottom:2px solid $elements_color
     }
 }
+.dropdown-item-ul{
+    display: none;
+        }
+.dropdown-item-menu:active .dropdown-item-ul{
+  display: block;
+}
 
 }
-@media (max-width:960px){
 
-    
-}
-@media (max-width:720px){
+@media (max-width:768px){
 .header-slider {
  
         width: 100%;
@@ -661,6 +697,10 @@ display: none;
 
     background-color: $lowtext_color;
 }
+.navbar::before{
+display: none;
+}
+
 }   
     
 

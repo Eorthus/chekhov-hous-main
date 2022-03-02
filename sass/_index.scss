@@ -1,3 +1,23 @@
+.underground-menu-container{
+    background-color: transparent !important;
+    border:none !important;
+    text-align: left;
+    padding:0 !important;
+    &:hover, &:active{
+        color:$elements_color !important;
+    }
+}
+.dropdown-item-p{
+    margin-bottom: 0 !important;
+}
+.card-body{
+    border:none;
+    list-style-type: none !important;
+    list-style: none !important;
+   ul li a:hover a{
+        color:$elements_color !important;
+    }
+}
 .index-about{
     min-height:742px;
     height:100%;
@@ -942,7 +962,7 @@ height: 100%;
 }
 .index-slider .slick-dots{
 left:50%;
-width:20% !important;
+width:50% !important;
 }
 .index-slider-left{
 justify-content: none;

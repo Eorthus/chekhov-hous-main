@@ -73,40 +73,12 @@ $(document).ready(function () {
 
         });
     });
-
-    $(window).resize(
-        checkWidth // проверит при изменении размера окна клиента
-    );
-
-    function checkWidth() {
-        var windowWidth = $('body').innerWidth();
-
-
-        if (windowWidth < 991) {
-
-            document.querySelector(`.header-address`).innerText = "Московская область, г. Чехов";
-        }
-        else {
-            document.querySelector(`.header-address`).innerText = "МО, г. Чехов, симферопольское шоссе, д. 2";
-
-        }
-        if (windowWidth < 768) {
-
-            document.querySelector(`.contacts-container-address-link-p`).innerText = "Московская область, г. Чехов";
-            document.querySelector(`.index-buildprices-head-headtext`).innerText = "Прайс на ремонт";
-            document.querySelector(`.index-gallery-h2`).innerText = "Галерея";
-        }
-        else {
-            document.querySelector(`.contacts-container-address-link-p`).innerText = "МО, г. Чехов, симферопольское шоссе, д. 2";
-            document.querySelector(`.index-buildprices-head-headtext`).innerText = "Цены по ремонту квартир";
-            document.querySelector(`.index-gallery-h2`).innerText = "Фотогалерея";
-        }
-    }
-
-    checkWidth(); // проверит при загрузке страницы
-    // window.onresize = checkWidth;
-    // window.addEventListener('resize', checkWidth);
-
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $(this).parent().siblings().removeClass('open');
+        $(this).parent().toggleClass('open');
+    });
 
 });
 

@@ -2,14 +2,7 @@
     
     padding-bottom:0;
     padding-top:$vertical_padding;
-    overflow: hidden;
-    #wrapper {
-     
-        overflow: hidden;
-        transition: height 200ms;
-    
-      }
-      
+    overflow: hidden;      
       .list{
         display: flex;
     flex-direction: column;
@@ -69,7 +62,11 @@ margin-top:23px;
     .projects-filter{
         display: flex;
 padding-bottom:20px;
+margin-left:10px;
     justify-content: space-between;
+    .projects-filter-div{
+        text-align: end;
+    }
     .projects-filter-show{
         width:190px;
 
@@ -78,33 +75,30 @@ padding-bottom:20px;
     text-align: left;
     top: 17px;
     }
-    .projects-filter-filters{
-        width:100%;
-        text-align: end;
-        position: relative;
-
-    .projects-filters-filter-dropdown{
-background-color: #EBEAEE;
+position: relative;
+    }
+    .projects-filter-dropdown{
+background-color: $dropdown_color;
 color:$font_color;
 border-radius: 40px 40px 40px 4px;
 max-width: 214px;
 width:100%;
 height:50px;
 border:none;
+padding-right: 35px;
 option{
-    background-color: #EBEAEE;
+    background-color: $dropdown_color;
     height:50px;
 }
     }
-    .projects-filters-filter-collapse{
-        background-color: #EBEAEE;
-        border-radius:200px;
-        border:none;
+    .projects-filter-collapse{
         width:44px;
-        height: 44px;
+        height:44px;
+        border-radius: 200px !important;
+        background-color: $dropdown_color !important;
+        border: none !important;
+    margin-top:3px;
     }
-    }}
-
     .projects-cards-button{
         max-width:298px;
         width:100%;
@@ -115,7 +109,7 @@ option{
     line-height: 64px;
     text-align: center;
     }
-}
+
 .projects-cards{
     display: flex;
     justify-content: space-between;
@@ -230,6 +224,7 @@ opacity: 1;
     }
     
 }
+}
 @media (max-width:991px){
     
     .projects{
@@ -255,6 +250,18 @@ opacity: 1;
     padding-top:$mobile_vertical;
     .projects-cards-h3 {
         font-size: 24px;;
+    }
+    .projects-cards-s {
+        margin-top:9px !important;
+    }
+    .projects-filter-div{
+        text-align: start !important;
+    }
+    .projects-filter-show{
+        display: none;
+    }
+    .projects-filter-coll{
+        text-align: end !important;
     }
 }
 }
