@@ -267,16 +267,24 @@ margin-right: auto;
         }
 
 }
-@media (max-width:720px){
+@media (max-width:768px){
     footer{
-        margin-top:$mobile_vertical
+        margin-top:$mobile_vertical;
+        .footer-feedback-message{
+            padding: 16px 30px;
+            text-align: end;
+        }
     }
    .modal-dialog{
+    margin-left:auto !important;
+    margin-right:auto !important;
         .modal-content{
         padding-left: $mobile_padding;
         padding-right: $mobile_padding;
         padding-top: 40px;
         padding-bottom: 30px;
+       
+        
         .chekhov-h2{
             font-size:$minifont !important;
             font-weight: 400;

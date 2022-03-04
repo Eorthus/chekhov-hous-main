@@ -72,7 +72,7 @@ box-shadow: 0px 4px 10px #006830;
 }
 .f-regular-34 {
     font-family: $regular;
-    font-size: 34px;
+    font-size: 30px;
 
 }
 .f-regular-20 {
@@ -123,16 +123,23 @@ select:focus,
     text-decoration: none;
 }
 a:hover {
-    cursor: default;
+    cursor: pointer;
     text-decoration: none;
     color:$font-color;
 }
-.large-address{
-    display: block;
+
+.back_to_top{
+	position: fixed;
+	bottom:5%;
+	right:2%;
+	display:block;
+    transform: rotate(-90deg);
+    img{
+        width:100px;
+        border-radius: 200px;
+    box-shadow: $shadow_dark;
     }
-    .small-address{
-    display: none;
-    }
+}
 
 @media (max-width:1320px){
 
@@ -145,12 +152,7 @@ a:hover {
     
 }
 @media (max-width:768px){
-    .large-address{
-        display: none;
-        }
-        .small-address{
-        display: block;
-        }
+
     .container{
         padding-left:$mobile_padding;
         padding-right:$mobile_padding;
@@ -159,15 +161,51 @@ a:hover {
         font-size:16px;
     
     }
+    .f-regular-34 {
+        font-family: $regular;
+        font-size: 20px;
+    
+    }
     .chekhov-h2{
-        font-size:34px;
+        font-size:30px;
     }     
     .chekhov-h3{
         font-size:24px;
     }     
+    .chekhov-h4{
+        font-family: $regular;
+        font-size: 20px;
+    }
+    .back_to_top{
+        img{
+            width:44px;
+        }
+    }
+    
 }
-@media (max-width:540px){
-
+@media (max-width:576px){
+    .f-regular-20{
+        font-size:14px !important;
+    
+    }
+    .f-regular-34 {
+        font-family: $regular;
+        font-size: 20px;
+    
+    }
+    .chekhov-h2{
+        font-size:26px !important;
+    }     
+    .chekhov-h3{
+        font-size:20px !important;
+    }     
+    .chekhov-h4{
+        font-family: $regular;
+        font-size: 17px;
+    }
 
 }
-
+.slick-track{
+    display: flex;
+    flex-wrap: nowrap;
+}

@@ -22,7 +22,7 @@
     </style>
 
 
-    <header class="f-regular-16">
+    <header class="f-regular-16" id="scrollup">
         <div class="header-contacts row container">
             <div class="header-contacts-logo col-6 col-sm-6 col-lg-3">
                 <a href="index.html">
@@ -33,7 +33,7 @@
                 <address> <a class="header-contacts-address-link" href="https://yandex.ru/maps/-/CCU5ZGqc1D"> <img
                             src="img/geos.svg" alt="address">
                         <p class="header-address large-address"> МО, г. Чехов, симферопольское шоссе, д. 2</p>
-                        <p class="header-address small-address"> Московская область, г. Чехов</p>
+
                     </a>
                 </address>
                 <a class="header-contacts-address-email" href="mailto:chehovhouse@yandex.ru"><img src="img/email.svg"
@@ -41,10 +41,10 @@
             </div>
             <div class="header-contacts-phone col-10 col-sm-10 col-lg-3">
                 <img src="img/tel.svg" alt="address">
-                <a class="header-contacts-phone-number" href="tel:+79266211152">+7(926)&nbsp621&nbsp11&nbsp52</a>
+                <a class="header-contacts-phone-number" pattern href="tel:+79266211152">+7(926) 621 11 52</a>
 
-                <a class="header-contacts-phone-number" href="tel:+74950159015">
-                    +7(495)&nbsp015&nbsp90&nbsp15
+                <a class="header-contacts-phone-number" pattern href="tel:+74950159015">
+                    +7(495) 015 90 15
                 </a>
             </div>
             <div class="header-contacts-feedback col-6 col-sm-6 col-lg-3">
@@ -250,22 +250,22 @@
                     работы мы делаем оперативно, недорого, а самое главное на высочайшем профессиональном уровне. </p>
                 <ul>
                     <li>
-                        <span class="index-about-container-h2 chekhov-h2">15</span>
-                        <p class="index-about-container-p">Лет на рынке строительства</p>
+                        <span class="index-about-container-ul-h2 chekhov-h2">15</span>
+                        <p class="index-about-container-ul-p">Лет на рынке строительства</p>
                     </li>
                     <li>
-                        <span class="index-about-container-h2 chekhov-h2">103</span>
-                        <p class="index-about-container-p">Реализованных проектов
+                        <span class="index-about-container-ul-h2 chekhov-h2">103</span>
+                        <p class="index-about-container-ul-p">Реализованных проектов
                             по ремонту</p>
                     </li>
                     <li>
-                        <span class="index-about-container-h2 chekhov-h2">40</span>
-                        <p class="index-about-container-p">Профессиональных
+                        <span class="index-about-container-ul-h2 chekhov-h2">40</span>
+                        <p class="index-about-container-ul-p">Профессиональных
                             сотрудников</p>
                     </li>
                     <li>
-                        <span class="index-about-container-h2 chekhov-h2">72</span>
-                        <p class="index-about-container-p">Построенных
+                        <span class="index-about-container-ul-h2 chekhov-h2">72</span>
+                        <p class="index-about-container-ul-p">Построенных
                             домов</p>
                     </li>
                 </ul>
@@ -335,11 +335,12 @@
 
         <section class="index-prices container f-regular-20">
             <span class="index-prices-h2 chekhov-h2">Цены на строительство домов</span>
-            <ul class="index-prices-gallery f-regular-20">
-                <li>
-                    <img src="img/price1.jpg" alt="price1">
-                    <div class="index-prices-gallery-price">
-                        <a href="buildtype.html">
+            <ul class="index-prices-gallery row f-regular-20">
+                <li class="col-12 col-sm-6 col-xxl-4">
+                    <a href="buildtype.html">
+                        <img src="img/price1.jpg" alt="price1">
+                        <div class="index-prices-gallery-price">
+
                             <p class="index-prices-gallery-price-p">Каркасный дом</p>
                             <p class="index-prices-gallery-price-p">от
                                 <span class="index-prices-gallery-price-p-span">
@@ -347,13 +348,15 @@
                                 </span>
                                 /м<sup>2</sup>
                             </p>
-                        </a>
-                    </div>
+
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="img/price2.jpg" alt="price2">
-                    <div class="index-prices-gallery-price">
-                        <a href="buildtype.html">
+                <li class="col-12 col-sm-6 col-xxl-4">
+                    <a href="buildtype.html">
+                        <img src="img/price2.jpg" alt="price2">
+                        <div class="index-prices-gallery-price">
+
                             <p class="index-prices-gallery-price-p">Брусовые дома</p>
                             <p class="index-prices-gallery-price-p">от
                                 <span class="index-prices-gallery-price-p-span">
@@ -361,13 +364,15 @@
                                 </span>
                                 /м<sup>2</sup>
                             </p>
-                        </a>
-                    </div>
+
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="img/price3.jpg" alt="price3">
-                    <div class="index-prices-gallery-price">
-                        <a href="buildtype.html">
+                <li class="col-12 col-sm-6 col-xxl-4">
+                    <a href="buildtype.html">
+                        <img src="img/price3.jpg" alt="price3">
+                        <div class="index-prices-gallery-price">
+
                             <p class="index-prices-gallery-price-p">Срубовые дома</p>
                             <p class="index-prices-gallery-price-p">от
                                 <span class="index-prices-gallery-price-p-span">
@@ -375,13 +380,15 @@
                                 </span>
                                 /м<sup>2</sup>
                             </p>
-                        </a>
-                    </div>
+
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="img/price4.jpg" alt="price4">
-                    <div class="index-prices-gallery-price">
-                        <a href="buildtype.html">
+                <li class="col-12 col-sm-6 col-xxl-4">
+                    <a href="buildtype.html">
+                        <img src="img/price4.jpg" alt="price4">
+                        <div class="index-prices-gallery-price">
+
                             <p class="index-prices-gallery-price-p">Дом кирпичный</p>
                             <p class="index-prices-gallery-price-p">от
                                 <span class="index-prices-gallery-price-p-span">
@@ -389,13 +396,15 @@
                                 </span>
                                 /м<sup>2</sup>
                             </p>
-                        </a>
-                    </div>
+
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="img/price5.jpg" alt="price5">
-                    <div class="index-prices-gallery-price">
-                        <a href="buildtype.html">
+                <li class="col-12 col-sm-6 col-xxl-4">
+                    <a href="buildtype.html">
+                        <img src="img/price5.jpg" alt="price5">
+                        <div class="index-prices-gallery-price">
+
                             <p class="index-prices-gallery-price-p">Газопеноблочные дома</p>
                             <p class="index-prices-gallery-price-p">от
                                 <span class="index-prices-gallery-price-p-span">
@@ -403,13 +412,15 @@
                                 </span>
                                 /м<sup>2</sup>
                             </p>
-                        </a>
-                    </div>
+
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="img/price6.jpg" alt="price6">
-                    <div class="index-prices-gallery-price">
-                        <a href="buildtype.html">
+                <li class="col-12 col-sm-6 col-xxl-4">
+                    <a href="buildtype.html">
+                        <img src="img/price6.jpg" alt="price6">
+                        <div class="index-prices-gallery-price">
+
                             <p class="index-prices-gallery-price-p">Комбинированный дом</p>
                             <p class="index-prices-gallery-price-p">от
                                 <span class="index-prices-gallery-price-p-span">
@@ -417,9 +428,10 @@
                                 </span>
                                 /м<sup>2</sup>
                             </p>
-                        </a>
 
-                    </div>
+
+                        </div>
+                    </a>
                 </li>
             </ul>
             <a class="button-main index-prices-button" href="build.html">Подробнее</a>
@@ -466,37 +478,54 @@
                         <img src="img/build1.jpg" alt="gallery1">
                         <a class="index-projects-slider-a" href="card.html"></a>
                     </div>
-                    <span class="chekhov-h3 index-projects-slider-h3">Коттедж за городом</span>
-                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
-                        сделан описание проекта пару
-                        слов, когда и как он
-                        сделан </p>
-                    <span class="chekhov-h3 index-projects-slider-span">от 82 800</span>
+                    <div class="index-projects-slider-info">
+                        <span class="chekhov-h3 index-projects-slider-h3">Коттедж за городом</span>
+
+                        <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и
+                            как
+                            сделан описание проекта пару
+                            слов, когда и как он
+                            сделан </p>
+
+                        <span class="chekhov-h3 index-projects-slider-span">от 82 800</span>
+                    </div>
                 </div>
                 <div>
                     <div class="index-projects-slider-img">
 
                         <img src="img/build2.jpg" alt="gallery2">
                         <a class="index-projects-slider-a" href="card.html"></a>
-                    </div> <span class="chekhov-h3 index-projects-slider-h3">Дачный дом в Подмосковье</span>
-                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
-                        сделан описание проекта пару
-                        слов, когда и как он
-                        сделан </p>
-                    <span class="chekhov-h3 index-projects-slider-span">от 94 800</span>
+                    </div>
+                    <div class="index-projects-slider-info">
+                        <span class="chekhov-h3 index-projects-slider-h3">Дачный дом в Подмосковье</span>
+
+                        <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и
+                            как
+                            сделан описание проекта пару
+                            слов, когда и как он
+                            сделан </p>
+
+                        <span class="chekhov-h3 index-projects-slider-span">от 94 800</span>
+                    </div>
                 </div>
                 <div>
                     <div class="index-projects-slider-img">
 
                         <img src="img/build3.jpg" alt="gallery3">
                         <a class="index-projects-slider-a" href="card.html"></a>
-                    </div> <span class="chekhov-h3 index-projects-slider-h3">Дачный дом в Подмосковье</span>
-                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
-                        сделан описание проекта пару
-                        слов, когда и как он
-                        сделан </p>
-                    <span class="chekhov-h3 index-projects-slider-span">от 94 800</span>
+                    </div>
+                    <div class="index-projects-slider-info">
+                        <span class="chekhov-h3 index-projects-slider-h3">Дачный дом в Подмосковье</span>
 
+
+                        <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и
+                            как
+                            сделан описание проекта пару
+                            слов, когда и как он
+                            сделан</p>
+
+                        <span class="chekhov-h3 index-projects-slider-span">от 94 800</span>
+                    </div>
                 </div>
                 <div>
                     <div class="index-projects-slider-img">
@@ -504,12 +533,17 @@
                         <img src="img/build1.jpg" alt="gallery1">
                         <a class="index-projects-slider-a" href="card.html"></a>
                     </div>
-                    <span class="chekhov-h3 index-projects-slider-h3">Коттедж за городом</span>
-                    <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и как
-                        сделан описание проекта пару
-                        слов, когда и как он
-                        сделан </p>
-                    <span class="chekhov-h3 index-projects-slider-span">от 82 800</span>
+                    <div class="index-projects-slider-info">
+                        <span class="chekhov-h3 index-projects-slider-h3">Коттедж за городом</span>
+
+                        <p class="f-regular-16 index-projects-slider-p">Краткое описание проекта пару слов, когда и
+                            как
+                            сделан описание проекта пару
+                            слов, когда и как он
+                            сделан </p>
+
+                        <span class="chekhov-h3 index-projects-slider-span">от 82 800</span>
+                    </div>
                 </div>
 
             </div>
@@ -813,8 +847,7 @@
                                 по строительству и
                                 ремонту. Все наши работы мы делаем оперативно, недорого.
                             </p>
-                            <button type="button"
-                                class="btn btn-primary index-slider-left-nav-button button-main button-dark"
+                            <button type="button" class="index-slider-left-nav-button button-main button-dark"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать
                                 звонок</button>
                         </div>
@@ -834,8 +867,7 @@
                                 и
                                 т.д.
                             </p>
-                            <button type="button"
-                                class="btn btn-primary index-slider-left-nav-button button-main button-dark"
+                            <button type="button" class="index-slider-left-nav-button button-main button-dark"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать
                                 звонок</button>
                         </div>
@@ -855,8 +887,7 @@
                                 и
                                 т.д.
                             </p>
-                            <button type="button"
-                                class="btn btn-primary index-slider-left-nav-button button-main button-dark"
+                            <button type="button" class="index-slider-left-nav-button button-main button-dark"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать
                                 звонок</button>
                         </div>
@@ -872,7 +903,7 @@
 
         <section class="index-partners container">
             <span class="chekhov-h2 index-partners-h2">Наши партнеры</span>
-            <ul class="index-partners-set f-regular-20">
+            <ul class="index-partners-set row f-regular-20">
                 <li class="col-6"><img src="img/partner1.png" alt="partner1">
                     <p>Почта-банк</p>
 
@@ -887,7 +918,7 @@
                 </li>
             </ul>
         </section>
-
+        <a class="back_to_top" href="#scrollup" title="Наверх"><img src="img/arrowmini.svg" alt="scroll up"></a>
     </main>
 
     <footer class="f-regular-16">
@@ -980,6 +1011,7 @@
     <script type="text/javascript" src="js/components/jquery/dist/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/components/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/components/slick/slick.js"></script>
     <script type="text/javascript" src="js/components/slick/slick.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

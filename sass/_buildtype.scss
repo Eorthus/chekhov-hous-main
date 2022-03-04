@@ -100,7 +100,8 @@ box-shadow: $shadow_dark;
     .buildprices-table-row-price{
         text-align: left;
         padding-left: 0;
-        width:154px
+        width:154px;
+      
     }
     }
     @media (max-width:642px){
@@ -112,7 +113,7 @@ box-shadow: $shadow_dark;
         }
         .buildprices-table-row-price{
            width:147px;
-           font-size:20px !important;
+           font-size:16px  !important;
         }
         .buildprices-table-button{
             background-color: transparent;

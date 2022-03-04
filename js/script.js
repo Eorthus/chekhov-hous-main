@@ -1,6 +1,15 @@
 
 $(document).ready(function () {
-    $('#header-slider').slick({
+
+    function regular() {
+
+        let pattern = /(\+7|8)[\s(]?(\d{3})[\s)]?(\d{3})[\s-]?(\d{2})[\s-]?(\d{2})/g;
+        document.body.innerHTML = document.body.innerHTML.replace(pattern, '+7($2)$3-$4-$5');
+    }
+    regular();
+
+
+    $('.header-slider').slick({
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
@@ -9,8 +18,26 @@ $(document).ready(function () {
         Infinity: true,
         fade: true,
         cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
     });
     $('.index-gallery-slider').slick({
+        Infinity: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    $('.contacts-gallery-slider').slick({
         Infinity: false,
         arrows: true,
         dots: false,

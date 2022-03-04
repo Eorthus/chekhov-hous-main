@@ -49,16 +49,16 @@
         li{
             list-style-type: none;
        width:25%;
-       .index-about-container-h2{
+       .index-about-container-ul-h2{
             font-size:71px;
             color:$elements_color;
             margin-bottom:10px;
         
         }
-        .index-about-container-p{
+        .index-about-container-ul-p{
             max-width:245px;
             width:100%;
-       margin-bottom: 0px;
+    //   margin-bottom: 0px;
         }
     }
     }    
@@ -164,10 +164,21 @@
    color: #4F4F4F;
     flex: 1 0 auto;
     margin-top: 41px;
+    ul{
+        box-shadow: $shadow_light;
+    }
     li{
-        margin:10px 10px 10px 10px;
+      //  margin:10px 10px 10px 10px;
+      transition: 0.5s;
+      margin-bottom:20px;
+     overflow: hidden;
         position: relative;
-        width: 31%;
+        &:hover{
+            transform: scale(1.05);
+            
+            
+        }
+       // width: 31%;
         &:first-child img{
             border-radius:40px 4px 4px 4px;
         }
@@ -189,8 +200,8 @@
    
 }
 .index-prices-gallery-price{
-   min-width:245px;
-   min-height: 103px;
+   min-width:200px;
+   min-height: 90px;
     border-radius: 40px 40px 40px 4px;
     background: white;
     box-shadow: $shadow_light;
@@ -199,6 +210,7 @@
     padding-right: 28px;
     text-align: left;
     transition: 0.5s;
+    padding-bottom: 20px;
     &:hover{
         transform: scale(1.1);
     }
@@ -290,12 +302,12 @@ opacity: 1;
     }
     .slick-list{
         display: block !important;
-        height: 539px !important;
     }
     .slick-slide{
         display:flex !important;
         justify-content: center !important;
-        height: 604px !important;
+        min-height: 660px !important;
+        max-height: 754px !important;
       //  height: 100% !important;
       flex-direction: row-reverse;
       margin-bottom: 0px;
@@ -359,7 +371,7 @@ opacity: 1;
         width:100%;
         display: block;
     text-align: center;
-    line-height: 250%;
+    line-height: 64px;
     }
 }
 .index-slider-right{
@@ -448,10 +460,22 @@ right:-30%;
     text-align: center;
     }
 }
+
 .index-projects-slider{
+
     .index-projects-slider-img{
         position: relative;
+        flex:1;
+      
      
+    }
+    .index-projects-slider-info{
+        margin-top:40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        flex: 1;
     }
     .index-projects-slider-a{
         
@@ -462,8 +486,9 @@ right:-30%;
     }
     .index-projects-slider-h3{
     color: rgba(79, 79, 79, 1);
-    margin-top:40px;
+  //  margin-top:40px;
     margin-bottom:12px;
+    flex:1;
    
    }
    .index-projects-slider-p{
@@ -471,9 +496,10 @@ right:-30%;
        color:rgba(79, 79, 79, 1);
        margin-right:34px;
        margin-top:12px;
+       flex-grow:1;
    }
    .index-projects-slider-span{
-       margin-bottom:40px;
+     //  margin-bottom:40px;
        color:$elements_color;
        &:after{
         content:'\0020BD';
@@ -489,7 +515,7 @@ right:-30%;
        background-repeat: no-repeat;
        background-size: cover;
     right: 0px;
-    bottom: 33%;
+    bottom: 0px;
     transition: 0.5s;
     &:hover{
         transform: scale(1.2);
@@ -501,21 +527,25 @@ right:-30%;
 border-radius: 40px 4px 40px 4px;
     height: 480px;
     object-fit: cover;
-    margin-bottom:40px;
+   
     }
     .slick-slide{
         position: relative !important;
      
       width:480px !important;
         margin-right:20px !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
    
     }
     .slick-track{
         left: -15%;
      //   height:400px;
+     height:100%;
     }
     .slick-list{
-       height: 690px;
+       height: 750px;
     }
     .slick-next{
         right: 102px;
@@ -557,6 +587,10 @@ opacity: 1;
         color:$font_color;
         color: #4F4F4F;
        text-align: center;
+       transition: 0.5s;
+       &:hover{
+           transform: scale(1.05);
+       }
         
         .index-buildprices-newbuild-ul-li-h3{
             text-align: center;
@@ -630,6 +664,11 @@ line-height: 105px;
             margin-right:20px;
             text-align: center;
             position: relative;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.07);
+
+            }
             &:last-child{
                 margin-right:0px;
             }
@@ -762,6 +801,7 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top:36px;
     li{
         background: white;
         border-radius: 2px;
@@ -786,12 +826,16 @@ ul{
 
 
 @media (max-width:1320px){
+    .index-slider-left{
+        min-height:754px;
+    }
 
 }
 @media (max-width:1140px){
 
     .index-about-container-p{
         margin-bottom:20px !important;
+        margin-top:20px !important;
     }
     .index-about-container ul{
         flex-wrap: wrap;
@@ -826,7 +870,7 @@ width:50%;
             margin-bottom: 15px;
         }
         .index-prices-gallery li {
-            width: 46%;
+           // width: 46%;
         }
         .index-slider-left-nav{
             height: 100%;
@@ -927,7 +971,7 @@ text-align: center;
    
 }
 .index-prices-gallery li {
-    width: 90%;
+  //  width: 90%;
 }
 .index-gallery{
     .index-gallery-slider .slick-next {
@@ -1013,6 +1057,7 @@ display: none;
 
 }
 @media (max-width:768px){
+   
     .index-projects{
         padding-left:$mobile_padding;
     }
@@ -1051,6 +1096,9 @@ margin-top:40px;
 }
 .index-projects{
     padding-left:$mobile_padding;
+    .index-projects-slider-h3{
+        flex:3
+    }
 }
 
     .index-projects-slider .slick-next {
@@ -1078,30 +1126,47 @@ width:300px;
 
 }
 }
-  
+  .index-about{
+      min-height: unset;
+  }
     .index-about-container{
         padding-top:$mobile_vertical;
         padding-bottom: $mobile_vertical;
-        .index-about-container-h2{
-            margin-bottom:20px;
-            font-size: 60px !important;
+        .index-about-container-ul-h2{
+            margin-bottom: 0px;
+            font-size: 50px !important;
+            font-weight: normal;
          }
-         ul li{
+         .index-about-container-ul-p{
+margin-top:0px;
+margin-bottom: 35px;
+         }
+         ul {
+             margin-bottom:0px !important;
+             li{
             margin-top:20px;
+            &:nth-child(3){
+                margin-top:0px;
+                margin-bottom: 0px;
+                & p{
+                    margin-bottom: 0px;
+                }
+            }
+            &:nth-child(4){
+                margin-top:0px;
+                margin-bottom: 0px;
+                & p{
+                    margin-bottom: 0px;
+                }
+            }
          }
-    }
-
-    .index-about-container-h2 ul li{
-        font-size: 60px !important;
-        font-weight: normal;
-        margin-bottom: 0px;
-        
+        }
     }
     .index-prices-gallery li {
-        width: 100%;
+        //width: 100%;
     }
     .index-prices-gallery-price{
-right:0%;
+        right: calc(var(--bs-gutter-x) * .5);
 border-radius: 40px 40px 4px 40px;
     }
  
@@ -1111,6 +1176,12 @@ border-radius: 40px 40px 4px 40px;
     }
     .index-slider{
        padding-left: $mobile_padding !important;
+       .slick-slide{
+        min-height: 624px !important;
+        .index-slider-left{
+            min-height:354px;
+        }
+       }
         }
         .index-buildprices{
             padding-top:40px;
@@ -1138,6 +1209,13 @@ border-radius: 40px 40px 4px 40px;
         }
         .index-partners{
             margin-top:60px;
+            .index-partners-set{
+                margin-top:20px;
+            }
+        }
+        .index-slider .slick-dots {
+            left: 40%;
+            bottom:4% !important;
         }
  
 }
@@ -1145,6 +1223,7 @@ border-radius: 40px 40px 4px 40px;
     .index-partners-set li{
         margin: auto;
         margin-bottom: 15px;
+    
     }
 }
 @media (max-width:540px){
@@ -1156,6 +1235,7 @@ font-size: $minifont;
     }
     .index-projects-slider-h3{
         font-size:$minifont !important;
+        flex:1 !important;
     }
     .index-projects-slider-span{
         font-size: 20px !important;
@@ -1189,8 +1269,8 @@ font-size: $minifont;
 .index-projects-slider .slick-next {
     top: 25%;
 }
-.index-projects-slider .index-projects-slider-a {
-    bottom: 50% !important;
+.index-slider-left{
+    min-height:370px;
 }
 
 }

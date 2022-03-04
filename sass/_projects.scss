@@ -98,6 +98,10 @@ option{
         background-color: $dropdown_color !important;
         border: none !important;
     margin-top:3px;
+    padding:0;
+    img{
+        margin-top: 11px;
+    }
     }
     .projects-cards-button{
         max-width:298px;

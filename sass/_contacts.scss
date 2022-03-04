@@ -91,10 +91,15 @@ color:$font-color;
     display: none;
    
 }
+.contacts-gallery-slider{
+    &:first-child img{
+object-position: right;
+    }
+}
 .contacts-container-images img{
     transition: 0.5s;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 .contacts-map{
@@ -109,13 +114,12 @@ color:$font-color;
             margin-top: 16px;
     }
     .contacts-container-phone{
-    font-size: 24px;
     display: flex;
     flex-direction: column;
     position: relative;
     img{
        position: absolute;
-       left:200px;
+       left:160px;
        width:29px;
     }
     .contacts-container-phone-number{

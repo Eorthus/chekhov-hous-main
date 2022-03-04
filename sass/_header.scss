@@ -259,6 +259,9 @@ order:4;
     .header-contacts-address-link{
         display: flex;
         flex-wrap: nowrap;
+        img{
+        margin-bottom: auto;
+        }
     }
     img{
         margin-right: 7px;
@@ -339,7 +342,8 @@ min-height: 50px;
     .slick-slide{
         display:flex !important;
         justify-content: center !important;
-        height: 604px !important;
+        min-height: 660px !important;
+        max-height: 754px !important;
       //  height: 100% !important;
       margin-bottom: 0px;
     }
@@ -394,6 +398,7 @@ min-height: 50px;
     .header-slider-left-nav-p{
         color:$lowtext_color;
         margin-bottom:40px;
+        margin-top:16px;
     }
     .header-slider-left-nav-button{
         height:64px;
@@ -473,7 +478,9 @@ right:-30%;
 
 }
 @media (max-width:1320px){
-
+    .header-slider-left{
+        min-height:700px;
+    }
 }
 @media (max-width:1140px){
    .header-slider-left-nav{
@@ -483,14 +490,14 @@ right:-30%;
     }
     .header-slider{
         .chekhov-h2{
-            font-size: 34px !important;
+            font-size: 30px;
         }
         .f-regular-20{
-            font-size: 16px !important;
+            font-size: 16px;
         }
     .slick-slide{
-        min-height: 604px;
-        height:100% !important;
+        min-height: 624px;
+        
     }
 }
 
@@ -613,7 +620,7 @@ margin-top:17px;
     margin-bottom: 0px;
     flex-direction: column;
    // min-height: 624px !important;
-    height: 100% !important;
+   min-height: 624px !important;
 
 
 }
@@ -625,7 +632,8 @@ margin-top:17px;
 }
 }
 .header-slider .slick-dots{
-    left:50%;
+    left:40%;
+    bottom:4% !important;
 }
 .header-slider-left{
 justify-content: none;
@@ -648,12 +656,6 @@ width: 100%;
     margin-top: auto;
     min-height: auto;
 }
-}
-.chekhov-h2{
-    font-size:34px !important;
-}
-.f-regular-20{
-    font-size: 16px !important;
 }
 .header-slider-right{
     width: 100%;
@@ -698,7 +700,7 @@ display: none;
 }   
     
 
-@media (max-width:540px){
+@media (max-width:576px){
 
 .header-contacts-phone img{
 display: none !important;
@@ -710,8 +712,8 @@ display: none !important;
 .navbar{
     margin-left:-5%;
 }
-
+.header-slider-left{
+    min-height:400px;
 }
-.dropdown-toggle .show{
-    position: fixed;
+
 }
