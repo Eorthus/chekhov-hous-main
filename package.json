@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@fancyapps/ui": "^4.0.25",
-    "jquery": "^3.6.0"
-  }
-}
