@@ -386,6 +386,10 @@ header {
   background-color: #EBEAEE;
 }
 
+header .header-contacts-phone-number {
+  white-space: nowrap;
+}
+
 header .row {
   --bs-gutter-x: none !important;
 }
@@ -398,11 +402,13 @@ header .nav-link:hover, header .nav-link:active {
   color: #08A652;
 }
 
-header .slick-prev, header .slick-arrow {
+header .slick-prev,
+header .slick-arrow {
   visibility: hidden !important;
 }
 
-header .dropdown-item:hover, header .dropdown-item:focus {
+header .dropdown-item:hover,
+header .dropdown-item:focus {
   color: #08A652 !important;
   background-color: transparent;
 }
@@ -432,7 +438,7 @@ header .header-menu > nav .header-menu-ul {
 }
 
 header .header-menu > nav .header-menu-ul > li:hover:after {
-  content: '';
+  content: "";
   width: 15%;
   height: 3px;
   position: absolute;
@@ -512,11 +518,11 @@ header .dropdown-item-level {
     background-color: #08A652;
     border-radius: 5px;
     display: block;
-    -webkit-transition: all .2s;
-    transition: all .2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
   header .burger-menu:before, header .burger-menu:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
   }
@@ -553,8 +559,8 @@ header .dropdown-item-level {
     height: 100%;
     right: -100%;
     top: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     background-color: #08A652;
   }
   header .header-menu > nav > ul {
@@ -575,7 +581,7 @@ header .dropdown-item-level {
     position: relative;
   }
   header .header-menu > nav > ul > li:hover:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 3px;
     position: absolute;
@@ -588,8 +594,8 @@ header .dropdown-item-level {
   }
   header .header-menu.active {
     right: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     position: absolute;
     z-index: 1;
   }
@@ -645,7 +651,7 @@ header .dropdown-item-level {
 }
 
 .header-contacts-feedback .header-contacts-feedback-button:hover {
-  background: #19C56A;
+  background: #19c56a;
 }
 
 .header-contacts-phone {
@@ -658,7 +664,7 @@ header .dropdown-item-level {
 }
 
 .header-contacts-phone .header-contacts-phone-number:last-child::before {
-  content: '\2022';
+  content: "\2022";
   color: #08A652;
 }
 
@@ -767,7 +773,8 @@ header .dropdown-item-level {
   display: none !important;
 }
 
-.header-menu-nav .dropdown-item:focus, .header-menu-nav .dropdown-item:hover {
+.header-menu-nav .dropdown-item:focus,
+.header-menu-nav .dropdown-item:hover {
   background: transparent !important;
   color: #08A652 !important;
 }
@@ -1093,7 +1100,7 @@ header .dropdown-item-level {
   }
   .navbar .navbar-toggler {
     color: none;
-    border: none  !important;
+    border: none !important;
   }
   .navbar .navbar-toggler-icon {
     background-image: url(../img/menu.svg) !important;
@@ -1181,7 +1188,7 @@ header .dropdown-item-level {
     display: none;
   }
   .header-contacts-phone::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 41px;
     left: 2%;
@@ -1191,7 +1198,7 @@ header .dropdown-item-level {
     background-color: #B7B7B7;
   }
   .header-contacts-address::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 97px;
     left: 2%;
@@ -3092,7 +3099,7 @@ a:hover {
 }
 
 .projects .projects-cards .projects-cards-price .projects-cards-s:after {
-  content: '\0020BD';
+  content: "\0020BD";
   margin-left: 4px;
 }
 
@@ -3102,7 +3109,7 @@ a:hover {
 }
 
 .projects .projects-cards .projects-cards-span:after {
-  content: '\0020BD';
+  content: "\0020BD";
   margin-left: 4px;
 }
 
@@ -3188,6 +3195,9 @@ a:hover {
     margin-top: 20px;
     max-width: 226px;
     width: 100%;
+  }
+  .projects .projects-filter {
+    margin-left: 0px !important;
   }
 }
 
