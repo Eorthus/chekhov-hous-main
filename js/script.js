@@ -81,13 +81,12 @@ $(document).ready(function () {
         cssEase: 'linear',
     });
     $(".phone_mask").mask("+7(999)999-99-99");
+
+
     $(function () {
         var b = $("#button");
         var w = $("#wrapper");
         var l = $("#list");
-
-        // w.height(l.outerHeight(true));
-
         b.click(function () {
 
             if (w.hasClass('open')) {
@@ -101,6 +100,18 @@ $(document).ready(function () {
         });
     });
 
+
+    $(window).scroll(function () {
+        // если пользователь прокрутил страницу более чем на 200px
+        if ($(this).scrollTop() > 200) {
+            // то сделать кнопку scrollup видимой
+            $('.back_to_top').fadeIn();
+        }
+        // иначе скрыть кнопку scrollup
+        else {
+            $('.back_to_top').fadeOut();
+        }
+    });
 
 });
 

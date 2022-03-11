@@ -1435,7 +1435,7 @@ header .dropdown-item-level {
   list-style-type: none;
   margin-right: -10px;
   margin-left: -10px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -1448,16 +1448,27 @@ header .dropdown-item-level {
 }
 
 .index-prices-gallery li {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  height: 100%;
   margin-bottom: 20px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
-.index-prices-gallery li:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.index-prices-gallery li img {
+  border-radius: 4px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.index-prices-gallery li img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.index-prices-gallery li:hover .index-prices-gallery-price {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .index-prices-gallery li:first-child img {
@@ -1476,11 +1487,6 @@ header .dropdown-item-level {
   border-radius: 4px 4px 40px 4px;
 }
 
-.index-prices-gallery li img {
-  border-radius: 4px;
-  width: 100%;
-}
-
 .index-prices-gallery-price {
   min-width: 200px;
   min-height: 90px;
@@ -1495,6 +1501,7 @@ header .dropdown-item-level {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .index-prices-gallery-price:hover {
@@ -1520,7 +1527,7 @@ header .dropdown-item-level {
 }
 
 .index-prices-gallery-price .index-prices-gallery-price-p .index-prices-gallery-price-p-span:after {
-  content: '\0020BD';
+  content: "\0020BD";
   margin-left: 4px;
   font-size: 20px;
 }
@@ -1544,15 +1551,23 @@ header .dropdown-item-level {
 .index-gallery-slider img {
   display: block;
   width: 575px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 400px;
+  overflow: hidden;
 }
 
 .index-gallery-slider .slick-slide {
   position: relative !important;
   width: 575px !important;
   margin-right: 20px !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.index-gallery-slider .slick-slide:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .index-gallery-slider .slick-active:first-child img {
@@ -1853,7 +1868,7 @@ header .dropdown-item-level {
 }
 
 .index-projects-slider .index-projects-slider-span:after {
-  content: '\0020BD';
+  content: "\0020BD";
   margin-left: 4px;
 }
 
@@ -1951,15 +1966,13 @@ header .dropdown-item-level {
 .index-buildprices-newbuild .index-buildprices-newbuild-ul .index-buildprices-newbuild-ul-li {
   background-color: white;
   color: #303432;
-  color: #4F4F4F;
+  color: #4f4f4f;
   text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .index-buildprices-newbuild .index-buildprices-newbuild-ul .index-buildprices-newbuild-ul-li:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-box-shadow: 0px 8px 48px #bbb;
+          box-shadow: 0px 8px 48px #bbb;
 }
 
 .index-buildprices-newbuild .index-buildprices-newbuild-ul .index-buildprices-newbuild-ul-li .index-buildprices-newbuild-ul-li-h3 {
@@ -1992,7 +2005,7 @@ header .dropdown-item-level {
 }
 
 .index-buildprices-newbuild-price:after {
-  content: '\0020BD';
+  content: "\0020BD";
   margin-left: 4px;
 }
 
@@ -2037,17 +2050,15 @@ header .dropdown-item-level {
 .index-buildprices-oldbuild .index-buildprices-oldbuild-ul .index-buildprices-oldbuild-ul-li {
   background-color: white;
   color: #303432;
-  color: #4F4F4F;
+  color: #4f4f4f;
   margin-right: 20px;
   text-align: center;
   position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .index-buildprices-oldbuild .index-buildprices-oldbuild-ul .index-buildprices-oldbuild-ul-li:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-box-shadow: 0px 8px 48px #D2D2D2;
+          box-shadow: 0px 8px 48px #D2D2D2;
 }
 
 .index-buildprices-oldbuild .index-buildprices-oldbuild-ul .index-buildprices-oldbuild-ul-li:last-child {
@@ -2089,7 +2100,7 @@ header .dropdown-item-level {
   margin: auto;
   display: block;
   text-align: center;
-  line-height: 200%;
+  line-height: 48px;
 }
 
 .index-buildprices-oldbuild-name {
@@ -2107,8 +2118,8 @@ header .dropdown-item-level {
 }
 
 .index-buildprices-newbuild-ul-li {
-  -webkit-box-shadow: 0px 8px 48px #D2D2D2;
-          box-shadow: 0px 8px 48px #D2D2D2;
+  -webkit-box-shadow: 4px 4px 40px #EBEBEB;
+          box-shadow: 4px 4px 40px #EBEBEB;
   position: relative;
 }
 
@@ -2149,8 +2160,8 @@ header .dropdown-item-level {
 }
 
 .index-buildprices-oldbuild-ul-li {
-  -webkit-box-shadow: 0px 8px 48px #D2D2D2;
-          box-shadow: 0px 8px 48px #D2D2D2;
+  -webkit-box-shadow: 4px 4px 40px #EBEBEB;
+          box-shadow: 4px 4px 40px #EBEBEB;
 }
 
 .index-buildprices-oldbuild-ul-li ul {
@@ -2321,7 +2332,7 @@ header .dropdown-item-level {
     margin: auto;
     display: block !important;
     text-align: center;
-    line-height: 200%;
+    line-height: 48px;
   }
   .index-buildprices-newbuild-ul-li:hover .index-buildprices-newbuild-div {
     height: 0px;
@@ -2568,7 +2579,7 @@ header .dropdown-item-level {
     margin-bottom: 0px;
   }
   .index-prices-gallery-price {
-    right: calc(var(--bs-gutter-x) * .5);
+    right: calc(var(--bs-gutter-x) * 0.5);
     border-radius: 40px 40px 4px 40px;
   }
   .index-staff {
@@ -2837,18 +2848,23 @@ a:hover {
 
 .back_to_top {
   position: fixed;
-  bottom: 5%;
+  bottom: 2%;
   right: 2%;
   display: block;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  display: none;
 }
 
 .back_to_top img {
-  width: 100px;
+  width: 70px;
   border-radius: 200px;
-  -webkit-box-shadow: 0px 8px 48px #D2D2D2;
-          box-shadow: 0px 8px 48px #D2D2D2;
+}
+
+@media (max-width: 1140px) {
+  .back_to_top img {
+    width: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2874,7 +2890,7 @@ a:hover {
     font-size: 20px;
   }
   .back_to_top img {
-    width: 44px;
+    width: 40px;
   }
 }
 
@@ -3421,7 +3437,7 @@ a:hover {
 }
 
 .contacts-container .contacts-container-phone .contacts-container-phone-number:nth-child(3)::before {
-  content: '\2022';
+  content: "\2022";
   color: #08A652;
   margin-right: 17px;
 }
@@ -3602,6 +3618,7 @@ a:hover {
   .contacts-map {
     height: 560px;
     overflow: hidden;
+    margin-bottom: -60px;
   }
 }
 
