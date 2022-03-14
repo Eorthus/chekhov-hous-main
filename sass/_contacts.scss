@@ -58,6 +58,8 @@
             width: 100%;
             border-radius: 40px 4px 4px 4px;
             margin-bottom: 20px;
+            max-height: 451px;
+            object-fit: cover;
         }
     }
     .contacts-container-images-bottom {
@@ -90,10 +92,8 @@
     }
 }
 .contacts-container-images img {
-    transition: 0.5s;
-    &:hover {
-        transform: scale(1.05);
-    }
+    object-fit: cover;
+    max-height: 400px;
 }
 .contacts-map {
     margin-bottom: -$vertical_padding;

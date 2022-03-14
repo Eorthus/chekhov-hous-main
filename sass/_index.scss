@@ -20,7 +20,6 @@
     }
 }
 .index-about {
-    min-height: 742px;
     height: 100%;
     background-image: url(../img/aboutbanner.svg);
     background-repeat: no-repeat;
@@ -29,8 +28,8 @@
     color: $font_color;
 }
 .index-about-container {
-    padding-top: $vertical_padding;
-    padding-bottom: $vertical_padding;
+    padding-top: 100px;
+    padding-bottom: $mobile_vertical;
     .index-about-container-h2 {
         .index-about-container-h2-span {
             margin-top: 8px;
@@ -39,7 +38,7 @@
         margin-bottom: 40px;
     }
     .index-about-container-p {
-        margin-bottom: 102px;
+        margin-bottom: 70px;
         margin-top: 40px;
     }
     ul {
@@ -101,8 +100,16 @@
         margin-top: 2px;
     }
 }
+.index-staff-images-first {
+    img {
+        max-height: 378px;
+    }
+}
 .index-staff-images-second {
     padding-left: 20px;
+    img {
+        max-height: 278px;
+    }
 }
 
 .index-preferences {
@@ -161,16 +168,15 @@
     }
     li {
         //  margin:10px 10px 10px 10px;
+
         img {
             border-radius: 4px;
             width: 100%;
-
-            transition: 0.5s;
-            &:hover {
-                transform: scale(1.03);
-            }
+            height: 100%;
+            object-fit: cover;
         }
-        height: 100%;
+        max-height: 418px;
+
         margin-bottom: 20px;
         position: relative;
         overflow: hidden;
@@ -245,29 +251,27 @@
 
     img {
         display: block;
-        width: 575px;
-
-        height: 400px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
         overflow: hidden;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .slick-slide {
         position: relative !important;
-
+        height: 400px;
         width: 575px !important;
         margin-right: 20px !important;
-
-        transition: 0.5s;
-        &:hover {
-            transform: scale(1.02);
-        }
+        overflow: hidden;
     }
     .slick-active:first-child img {
         border-radius: 40px 4px 4px 4px;
     }
     .slick-track {
-        left: -36%;
         height: 400px;
     }
     .slick-list {
@@ -308,7 +312,7 @@
         display: flex !important;
         justify-content: center !important;
         min-height: 660px !important;
-        max-height: 754px !important;
+        max-height: 660px !important;
         //  height: 100% !important;
         flex-direction: row-reverse;
         margin-bottom: 0px;
@@ -348,14 +352,13 @@
     justify-content: center;
     background-position: right;
     background-repeat: no-repeat;
-    display: block;
 }
 .index-slider-left-nav {
     display: block;
-    margin-top: 86px;
+    margin: auto;
     margin-right: $padding;
     margin-left: 64px;
-    margin-bottom: 20%;
+
     .index-slider-left-nav-h2 {
         color: white;
         margin-bottom: 12px;
@@ -528,8 +531,6 @@
         flex-direction: column;
     }
     .slick-track {
-        left: -15%;
-        //   height:400px;
         height: 100%;
     }
     .slick-list {
@@ -586,6 +587,7 @@
                 width: 100%;
                 margin-bottom: 20px;
                 object-fit: cover;
+                max-height: 204px;
             }
             &:nth-child(2) {
                 margin-left: 20px;
@@ -660,6 +662,7 @@
                 width: 100%;
                 margin-bottom: 20px;
                 object-fit: cover;
+                max-height: 204px;
             }
         }
     }
@@ -672,6 +675,8 @@
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
+        box-shadow: 0px 25px 26px -3px #d2d2d2;
+        z-index: 0;
 
         .index-buildprices-oldbuild-div-button {
             max-width: 246px;
@@ -782,9 +787,10 @@
         box-sizing: border-box;
         padding: 19px 23px 13px 23px;
         text-align: center;
-        transition: 0.5s;
-        &:hover {
-            transform: scale(1.1);
+
+        img {
+            max-height: 114px;
+            max-width: 224px;
         }
         .index-partners-p {
             margin-top: 12px;
@@ -793,9 +799,6 @@
 }
 
 @media (max-width: 1320px) {
-    .index-slider-left {
-        min-height: 754px;
-    }
 }
 @media (max-width: 1140px) {
     .index-about-container-p {
@@ -837,8 +840,6 @@
         // width: 46%;
     }
     .index-slider-left-nav {
-        height: 100%;
-        min-height: 604px;
         margin-right: 10%;
     }
     .index-slider {

@@ -27,6 +27,7 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 720,
@@ -59,6 +60,7 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 720,
