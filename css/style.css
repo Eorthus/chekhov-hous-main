@@ -1604,8 +1604,8 @@ header .dropdown-item-level {
 .index-gallery-slider .slick-next {
   right: 102px;
   top: 385px;
-  height: 78px !important;
-  width: 78px !important;
+  height: 100px !important;
+  width: 100px !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1940,8 +1940,8 @@ header .dropdown-item-level {
 .index-projects-slider .slick-next {
   right: 102px;
   top: 240px;
-  height: 78px !important;
-  width: 78px !important;
+  height: 100px !important;
+  width: 100px !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -2414,8 +2414,8 @@ header .dropdown-item-level {
     margin-top: 16px;
   }
   .index-gallery .index-gallery-slider .slick-next {
-    height: 60px !important;
-    width: 60px !important;
+    height: 100px !important;
+    width: 100px !important;
   }
   .index-slider {
     width: 100%;
@@ -2500,8 +2500,8 @@ header .dropdown-item-level {
     padding-bottom: 50px;
   }
   .index-gallery-slider .slick-next {
-    height: 60px !important;
-    width: 60px !important;
+    height: 100px !important;
+    width: 100px !important;
     top: 25%;
   }
   .index-gallery-slider .slick-list {
@@ -2532,8 +2532,8 @@ header .dropdown-item-level {
             flex: 3;
   }
   .index-projects-slider .slick-next {
-    height: 60px !important;
-    width: 60px !important;
+    height: 100px !important;
+    width: 100px !important;
     top: 90%;
   }
   .index-projects-slider .slick-list {
