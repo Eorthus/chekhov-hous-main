@@ -1826,6 +1826,10 @@ header .dropdown-item-level {
   text-align: center;
 }
 
+.index-projects-slider .index-projects-slider-img-div {
+  margin-bottom: 30px;
+}
+
 .index-projects-slider .index-projects-slider-img {
   position: relative;
   -webkit-box-flex: 1;
@@ -1848,9 +1852,6 @@ header .dropdown-item-level {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .index-projects-slider .index-projects-slider-a {
@@ -1863,7 +1864,6 @@ header .dropdown-item-level {
 
 .index-projects-slider .index-projects-slider-h3 {
   color: #4f4f4f;
-  margin-bottom: 12px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1873,7 +1873,6 @@ header .dropdown-item-level {
   margin-bottom: 16px;
   color: #4f4f4f;
   margin-right: 34px;
-  margin-top: 12px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -3098,18 +3097,39 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .projects-cards .index-projects-slider-img .index-projects-slider-img-div {
+  position: relative;
+  margin-bottom: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .projects .projects-cards .index-projects-slider-a {
   bottom: 0 !important;
 }
 
-.projects .projects-cards div {
+.projects .projects-cards .project {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .projects-cards .index-projects-slider-info {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3123,9 +3143,6 @@ a:hover {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .projects .projects-cards .index-projects-slider-h3 {
@@ -3138,7 +3155,6 @@ a:hover {
   margin-bottom: 16px;
   color: #4f4f4f;
   margin-right: 34px;
-  margin-top: 12px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -3146,7 +3162,6 @@ a:hover {
 
 .projects .projects-cards .projects-cards-h3 {
   color: #4f4f4f;
-  margin-bottom: 12px;
 }
 
 .projects .projects-cards .projects-cards-p {

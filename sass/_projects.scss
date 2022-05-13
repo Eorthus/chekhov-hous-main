@@ -126,20 +126,29 @@
         .index-projects-slider-img {
             position: relative;
             flex: 1;
+
+    display: flex;
+    flex-direction: column;
+            .index-projects-slider-img-div{
+                position: relative;
+                margin-bottom: 40px;
+                flex:1;
+            }
         }
         .index-projects-slider-a {
             bottom: 0 !important;
         }
-        div {
+        .project {
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
         .index-projects-slider-info {
-            margin-top: 40px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: stretch;
-            flex: 1;
+            //flex: 1;
         }
         .index-projects-slider-h3 {
             flex: 1;
@@ -148,12 +157,13 @@
             margin-bottom: 16px;
             color: rgba(79, 79, 79, 1);
             margin-right: 34px;
-            margin-top: 12px;
+          //  margin-top: 12px;
             flex-grow: 1;
         }
         .projects-cards-h3 {
+       
             color: rgba(79, 79, 79, 1);
-            margin-bottom: 12px;
+      
         }
         .projects-cards-p {
             margin-bottom: 16px;
