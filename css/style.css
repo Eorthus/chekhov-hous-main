@@ -458,6 +458,15 @@ header .header-menu > nav .header-menu-ul > li:hover:after {
   background-color: #08A652;
 }
 
+header .navbar::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  top: 0;
+}
+
 header .menu__item {
   list-style: none;
   display: inline-block;
@@ -471,15 +480,6 @@ header .menu__item:last-child {
 header .menu__link {
   text-decoration: none;
   color: #303432;
-}
-
-header .navbar::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background-color: white;
-  top: 0;
 }
 
 header .dropdown-item-menu {
@@ -1016,6 +1016,9 @@ header .dropdown-item-level {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  header .navbar::before {
+    height: 0px;
   }
   header .container {
     width: unset;
@@ -1828,6 +1831,8 @@ header .dropdown-item-level {
 
 .index-projects-slider .index-projects-slider-img-div {
   margin-bottom: 30px;
+  height: 480px;
+  width: 480px;
 }
 
 .index-projects-slider .index-projects-slider-img {
@@ -1907,9 +1912,9 @@ header .dropdown-item-level {
 
 .index-projects-slider img {
   display: block;
-  width: 480px;
+  width: 100%;
   border-radius: 40px 4px 40px 4px;
-  height: 480px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1918,7 +1923,7 @@ header .dropdown-item-level {
   position: relative !important;
   width: 480px !important;
   margin-right: 20px !important;
-  height: 100%;
+  height: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1926,14 +1931,6 @@ header .dropdown-item-level {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.index-projects-slider .slick-track {
-  height: 100%;
-}
-
-.index-projects-slider .slick-list {
-  height: 750px;
 }
 
 .index-projects-slider .slick-next {
@@ -2503,12 +2500,6 @@ header .dropdown-item-level {
     width: 100px !important;
     top: 25%;
   }
-  .index-gallery-slider .slick-list {
-    height: 236px;
-  }
-  .index-gallery-slider .slick-track {
-    height: 236px;
-  }
   .index-gallery-slider .slick-slide {
     width: 100%;
   }
@@ -2535,9 +2526,6 @@ header .dropdown-item-level {
     width: 100px !important;
     top: 90%;
   }
-  .index-projects-slider .slick-list {
-    height: 620px;
-  }
   .index-projects-slider .slick-track {
     min-height: 315px;
   }
@@ -2547,7 +2535,7 @@ header .dropdown-item-level {
   .index-projects-slider .slick-slide {
     max-width: 300px !important;
   }
-  .index-projects-slider img {
+  .index-projects-slider .index-projects-slider-img-div {
     height: 315px;
     width: 300px;
   }
@@ -3420,7 +3408,6 @@ a:hover {
 }
 
 .cards-slider {
-  height: 640px;
   overflow: hidden;
 }
 

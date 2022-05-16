@@ -50,7 +50,15 @@ header {
             }
         }
     }
+    .navbar::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
 
+        background-color: white;
+        top: 0;
+    }
     .menu__item {
         list-style: none;
         display: inline-block;
@@ -64,15 +72,7 @@ header {
         // font-size: 18px;
         color: $font_color;
     }
-    .navbar::before {
-        content: "";
-        position: absolute;
-        height: 2px;
-        width: 100%;
 
-        background-color: white;
-        top: 0;
-    }
     .dropdown-item-menu {
         padding: 0.25rem 1rem !important;
         margin-bottom: 0px !important;
@@ -504,6 +504,11 @@ header {
 @media (max-width: 991px) {
     header {
         flex-direction: column;
+        .navbar::before {
+
+            height: 0px;
+
+        }
         .container {
             width: unset;
             padding-left: $mobile_padding;

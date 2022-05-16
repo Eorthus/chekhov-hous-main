@@ -60,7 +60,8 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        variableWidth: true,
+        variableWidth: false,
+        variableHeight:false,
         responsive: [
             {
                 breakpoint: 720,
@@ -114,6 +115,6 @@ $(document).ready(function () {
             $('.back_to_top').fadeOut();
         }
     });
-
+document.querySelector('.index-projects .slick-track').classList.add('row')
 });
 
