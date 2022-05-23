@@ -17,7 +17,8 @@ address {
     margin-bottom: 0 !important;
 }
 .slick-prev {
-    visibility: hidden !important;
+   // visibility: hidden !important;
+   left:0px;
 }
 .slick-dots {
     width: 50% !important;
@@ -174,6 +175,9 @@ a:hover {
         img {
             width: 40px;
         }
+    }
+    .slick-next{
+        right:25px !important;
     }
 }
 @media (max-width: 576px) {
